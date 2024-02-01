@@ -4,3 +4,13 @@ provider "aws" {
   access_key = "sdfghjkl"
   secret_key = "dfghjksdfghjedefdg/0z"
 } 
+
+terraform {
+  cloud {
+    organization = "DSI-Dev-test"
+
+    workspaces {
+      name = "DSI-DEV"
+    }
+  }
+}
